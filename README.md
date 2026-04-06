@@ -1,60 +1,112 @@
+# 🚀 LLM Review Summarizer
 
-# LLM Product Review Analyzer
+An AI-powered Python project that scrapes product reviews, processes large text efficiently, and uses Large Language Models (LLMs) to generate meaningful summaries and sentiment insights.
 
-## Chosen Product URL
-Best Buy Laptop URL: ...
+---
 
-## Features
-- Review scraping
-- Text cleaning
-- Token chunking
-- LLM summarization
-- Sentiment analysis
-- CSV export
-- Retry logic
+## 🔍 Overview
 
-## How to Run
+This project automates the process of extracting and analyzing product reviews. It cleans raw text, handles long inputs using chunking, and leverages LLMs to produce concise summaries and sentiment analysis.
+
+---
+
+## ✨ Features
+
+* 🕸️ Web scraping of product reviews
+* 🧹 Text cleaning and preprocessing
+* ✂️ Chunking for long text handling
+* 🤖 LLM-based summarization
+* 📊 Sentiment analysis (positive / negative / neutral)
+* 💾 Export results to CSV
+
+---
+
+## 🧱 Project Structure
+
+```
+LLM-Review-Summarizer/
+│── main.py              # Main execution file
+│── scraper.py           # Scrapes reviews from web
+│── preprocess.py        # Cleans and processes text
+│── llm_analyzer.py      # LLM integration logic
+│── utils.py             # Helper functions
+│── requirements.txt     # Dependencies
+│── README.md            # Documentation
+```
+
+---
+
+## ⚙️ Installation
+
+```bash
+git clone https://github.com/Vidishsharma208/LLM---Review---Summarizer.git
+cd LLM---Review---Summarizer
 pip install -r requirements.txt
+```
+
+---
+
+## 🔐 Environment Setup
+
+Create a `.env` file in the root directory:
+
+```env
+OPENAI_API_KEY=your_api_key_here
+```
+
+---
+
+## ▶️ How to Run
+
+```bash
 python main.py
+```
 
-## Limitations
-- Website structure may change
-- Dynamic JS websites may need Selenium
-- API cost depends on review count
+---
 
-## Requirements.txt
+## 📂 Output
 
-🔹 requests
+* Processed reviews
+* Generated summaries
+* Sentiment insights
 
-For fetching product page HTML.
+All results are stored in the `output/` folder.
 
-🔹 beautifulsoup4
+---
 
-For scraping review text and metadata.
+## ⚠️ Limitations
 
-🔹 pandas
+* Website structure changes can break scraping
+* Dynamic websites may require Selenium
+* API usage cost depends on input size
 
-To store final review + LLM summaries in CSV/DataFrame.
+---
 
-🔹 numpy
+## 🚀 Future Improvements
 
-Useful for data preprocessing and optional text operations.
+* Add support for multiple websites
+* Build a Streamlit web interface
+* Add visualization dashboards
+* Improve sentiment accuracy with fine-tuned models
 
-🔹 openai
+---
 
-For OpenAI-compatible API calls.
+## 🧠 Tech Stack
 
-🔹 python-dotenv
+* Python
+* OpenAI API (LLM)
+* BeautifulSoup / Requests
+* Pandas / NumPy
 
-For loading .env API key securely.
+---
 
-🔹 tiktoken
+## 👨‍💻 Author
 
-For token counting and chunking long reviews.
+**Vidish Sharma**
+B.Tech AIML | Aspiring AI Engineer
 
-🔹 lxml
+---
 
-Faster HTML parsing than default parser.
-=======
-# LLM---Review---Summarizer
+## ⭐ If you found this useful
 
+Give this repo a ⭐ and support the project!
