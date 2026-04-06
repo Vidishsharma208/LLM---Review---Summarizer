@@ -98,7 +98,7 @@ python main.py
 
 ## 🎥 Demo Video
 
-(Add your demo video link here)
+https://drive.google.com/file/d/1qp2_GtcIwnHmEuGLLh9Cr_u6xaolnnvQ/view?usp=drive_link
 
 ---
 
