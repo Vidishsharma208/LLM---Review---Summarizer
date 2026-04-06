@@ -6,7 +6,21 @@ An AI-powered Python project that scrapes product reviews, processes large text 
 
 ## 🔍 Overview
 
-This project automates the process of extracting and analyzing product reviews. It cleans raw text, handles long inputs using chunking, and leverages LLMs to produce concise summaries and sentiment analysis.
+This project automates the process of extracting and analyzing product reviews from e-commerce platforms. It cleans raw text, handles long inputs using chunking, and leverages LLMs to produce concise summaries and sentiment analysis.
+
+---
+
+## 🛍️ Selected Product
+
+The application is tested on the following product:
+
+🔗 https://www.amazon.in/iPhone-Pro-Max-256-Promotion/dp/B0FQFW4MVJ
+
+This is a premium smartphone with advanced features like:
+
+* High-performance A19 Pro chip
+* Pro-level camera system
+* Large display and battery life
 
 ---
 
@@ -16,7 +30,7 @@ This project automates the process of extracting and analyzing product reviews. 
 * 🧹 Text cleaning and preprocessing
 * ✂️ Chunking for long text handling
 * 🤖 LLM-based summarization
-* 📊 Sentiment analysis (positive / negative / neutral)
+* 📊 Sentiment analysis
 * 💾 Export results to CSV
 
 ---
@@ -25,13 +39,13 @@ This project automates the process of extracting and analyzing product reviews. 
 
 ```
 LLM-Review-Summarizer/
-│── main.py              # Main execution file
-│── scraper.py           # Scrapes reviews from web
-│── preprocess.py        # Cleans and processes text
-│── llm_analyzer.py      # LLM integration logic
-│── utils.py             # Helper functions
-│── requirements.txt     # Dependencies
-│── README.md            # Documentation
+│── main.py
+│── scraper.py
+│── preprocess.py
+│── llm_analyzer.py
+│── utils.py
+│── requirements.txt
+│── README.md
 ```
 
 ---
@@ -48,9 +62,9 @@ pip install -r requirements.txt
 
 ## 🔐 Environment Setup
 
-Create a `.env` file in the root directory:
+Create a `.env` file:
 
-```env
+```
 OPENAI_API_KEY=your_api_key_here
 ```
 
@@ -64,49 +78,51 @@ python main.py
 
 ---
 
-## 📂 Output
+## 🧠 Design Choices
 
-* Processed reviews
-* Generated summaries
-* Sentiment insights
-
-All results are stored in the `output/` folder.
+* **Chunking Strategy**: Large review text is split into smaller chunks to handle LLM token limits
+* **Modular Architecture**: Separate files for scraping, preprocessing, and LLM interaction
+* **API-based LLM Integration**: Used OpenAI API for summarization and sentiment
+* **CSV Output**: Easy to analyze and visualize
 
 ---
 
 ## ⚠️ Limitations
 
-* Website structure changes can break scraping
-* Dynamic websites may require Selenium
-* API usage cost depends on input size
+* Amazon structure may change → scraper may break
+* Dynamic content may require Selenium
+* API usage cost depends on number of reviews
+* Rate limits can affect performance
+
+---
+
+## 🎥 Demo Video
+
+(Add your demo video link here)
 
 ---
 
 ## 🚀 Future Improvements
 
 * Add support for multiple websites
-* Build a Streamlit web interface
-* Add visualization dashboards
-* Improve sentiment accuracy with fine-tuned models
+* Build Streamlit UI
+* Add real-time dashboard
+* Improve sentiment accuracy
 
 ---
 
 ## 🧠 Tech Stack
 
 * Python
-* OpenAI API (LLM)
+* OpenAI API
 * BeautifulSoup / Requests
-* Pandas / NumPy
+* Pandas
 
 ---
 
 ## 👨‍💻 Author
 
-**Vidish Sharma**
-B.Tech AIML | Aspiring AI Engineer
+Vidish Sharma
+B.Tech AIML
 
 ---
-
-## ⭐ If you found this useful
-
-Give this repo a ⭐ and support the project!
